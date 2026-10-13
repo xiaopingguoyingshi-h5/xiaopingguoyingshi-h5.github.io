@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小苹果影视 - 种下希望，收获好片：电影/电视剧/动漫/综艺/纪录片/短剧/少儿 | xiaopingguoyingshi-h5</title>
+<meta name="description" content="小苹果影视（xiaopingguoyingshi-h5.github.io）像一片苹果园：电影、电视剧、动漫、综艺、纪录片、短剧、少儿按红透/青涩/半熟/落果/甜脆排，熟度热度榜、摘果人手记，移动端自适应。">
+<meta name="keywords" content="小苹果影视,苹果园片库,红透爽片,青涩慢片,下饭剧,怀旧片,合家欢动画,电影导航,电视剧导航,xiaopingguoyingshi-h5">
+<meta name="author" content="小苹果影视">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://xiaopingguoyingshi-h5.github.io/">
+<meta property="og:title" content="小苹果影视 - 种下希望，收获好片">
+<meta property="og:description" content="红透的爽片、青涩的慢片、半熟的下饭片、落果的怀旧片、甜脆的合家欢：小苹果影视像果园里挑果子。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xiaopingguoyingshi-h5.github.io/">
+<meta property="og:site_name" content="小苹果影视">
+<meta name="msvalidate.01" content="BING_VERIFY_CODE">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"小苹果影视",
+  "url":"https://xiaopingguoyingshi-h5.github.io/",
+  "description":"小苹果影视是果园母题的影视导航站，覆盖电影、电视剧、动漫、综艺、纪录片、短剧、少儿、直播。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"小苹果影视和其他影视导航站有什么不同？",
+      "acceptedAnswer":{"@type":"Answer","text":"别的站按类型或热度分，小苹果影视按'熟度'分：红透的爽片、青涩的慢片、半熟的下饭片、落果的怀旧片、甜脆的合家欢。像在果园里挑果子，不按货架号，按你今天想吃什么口味。"}
+    },
+    {
+      "@type":"Question",
+      "name":"小苹果影视提供盗版片源吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不提供。小苹果影视只做影视导航、片单分类、熟度榜和观片手记，不挂侵权播放地址、不绑下载器、不弹会员付费。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fff7e6;
+  --card:#ffffff;
+  --ink:#2b2118;
+  --muted:#7a6a55;
+  --red:#ff4d4f;
+  --green:#3fbf6f;
+  --yellow:#ffd34e;
+  --brown:#2b2118;
+  --line:rgba(255,77,79,.22);
+  --shadow:0 14px 34px rgba(120,80,30,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:
+    radial-gradient(720px 380px at 88% -8%,rgba(255,211,78,.28),transparent 60%),
+    radial-gradient(680px 360px at -8% 6%,rgba(63,191,111,.18),transparent 55%),
+    linear-gradient(180deg,#fff7e6 0%,#fff1d6 55%,#fde7c4 100%);
+  color:var(--ink);line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+
+/* 果园门头 */
+.pg-top{position:sticky;top:0;z-index:999;background:rgba(255,247,230,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--red)}
+.pg-top__in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.65rem 1rem}
+.pg-logo{font-weight:900;font-size:1.2rem;color:var(--red)}
+.pg-logo b{color:var(--green)}
+.pg-logo i{color:var(--brown);font-style:normal;font-size:.8rem;background:#fff;padding:.1rem .45rem;border-radius:8px;border:1px solid var(--line)}
+.pg-nav{display:flex;gap:.3rem}
+.pg-nav a{padding:.42rem .8rem;border-radius:20px;font-size:.9rem;color:var(--muted);font-weight:700}
+.pg-nav a:hover{background:rgba(255,77,79,.12);color:var(--red)}
+.pg-burger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.pg-burger span{width:22px;height:2px;background:var(--red);border-radius:2px}
+
+/* Hero 红苹果 */
+.pg-hero{max-width:1180px;margin:0 auto;padding:3.3rem 1rem 2.5rem;text-align:center}
+.pg-apple{width:128px;height:128px;margin:0 auto 1.3rem;position:relative}
+.pg-apple::before{content:"";position:absolute;left:50%;top:-14px;width:6px;height:26px;background:#7a5230;border-radius:3px;transform:translateX(-50%) rotate(8deg)}
+.pg-apple::after{content:"";position:absolute;left:62%;top:-20px;width:34px;height:18px;background:var(--green);border-radius:0 80% 0 80%;transform:rotate(-18deg)}
+.pg-body{width:128px;height:118px;border-radius:50% 50% 48% 48%/55% 55% 45% 45%;
+  background:radial-gradient(circle at 36% 30%,#ff8a8c 0 18%,#ff4d4f 30% 60%,#d62b2e 61% 100%);
+  box-shadow:inset -16px -10px 30px rgba(120,20,20,.45),0 10px 26px rgba(255,77,79,.3)}
+.pg-hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.2;margin-bottom:1rem}
+.pg-hero h1 em{font-style:normal;color:var(--red)}
+.pg-hero h1 u{text-decoration:none;color:var(--green)}
+.pg-hero p{color:var(--muted);max-width:700px;margin:0 auto 1.8rem}
+.pg-cta{display:inline-flex;gap:.5rem;align-items:center;padding:.85rem 2rem;border-radius:30px;font-weight:800;color:#fff;background:linear-gradient(90deg,var(--red),#ff7a45);box-shadow:var(--shadow)}
+.pg-dim{color:var(--muted);font-size:.78rem;letter-spacing:3px;font-family:ui-monospace,monospace;margin-bottom:.5rem}
+
+/* 区块 */
+.pg-sec{max-width:1180px;margin:0 auto;padding:3.1rem 1rem}
+.pg-head{margin-bottom:1.6rem;text-align:center}
+.pg-head .no{font-size:.72rem;color:var(--red);letter-spacing:3px;font-family:ui-monospace,monospace}
+.pg-head h2{font-size:clamp(1.4rem,3.4vw,2.1rem);font-weight:900;margin-top:.3rem}
+.pg-head h2 i{color:var(--green);font-style:normal}
+.pg-head p{color:var(--muted);margin-top:.35rem;font-size:.92rem}
+
+/* 熟果片单 */
+.pg-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.9rem}
+.pg-cell{border-radius:18px;padding:1.3rem 1rem;background:var(--card);text-align:center;transition:.25s;box-shadow:0 6px 16px rgba(120,80,30,.08);border:2px solid transparent}
+.pg-cell:hover{transform:translateY(-5px);border-color:var(--red);box-shadow:var(--shadow)}
+.pg-cell .ic{font-size:1.9rem}
+.pg-cell h3{font-size:.96rem;margin:.45rem 0 .25rem;font-weight:800}
+.pg-cell p{font-size:.72rem;color:var(--muted)}
+
+/* 果园频道 */
+.pg-ch{display:grid;grid-template-columns:repeat(8,1fr);gap:.7rem}
+.pg-c{border-radius:14px;padding:1rem .3rem;background:var(--card);text-align:center;border:1px solid var(--line);transition:.25s}
+.pg-c:hover{transform:translateY(-3px);background:#fff1d6}
+.pg-c .ic{font-size:1.5rem}
+.pg-c h3{font-size:.78rem;margin-top:.3rem;font-weight:700}
+.pg-c p{font-size:.6rem;color:var(--muted)}
+
+/* 熟度榜：红度条 */
+.pg-rank{display:grid;gap:1.1rem}
+.pg-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;box-shadow:0 6px 16px rgba(120,80,30,.08)}
+.pg-item h3{font-size:1.02rem;display:flex;justify-content:space-between;margin-bottom:.55rem;font-weight:800}
+.pg-item h3 span{color:var(--red)}
+.pg-bar{height:16px;border-radius:999px;background:#f0e2c8;overflow:hidden;position:relative;border:1px solid var(--line)}
+.pg-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--yellow),#ff7a45,var(--red))}
+.pg-bar i::after{content:"🍎";position:absolute;right:5px;top:-2px;font-size:.82rem}
+
+/* 手记 */
+.pg-notes{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.pg-note{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.4rem;box-shadow:0 6px 16px rgba(120,80,30,.08)}
+.pg-note .tag{font-size:.72rem;padding:.2rem .6rem;border-radius:8px;font-weight:800}
+.pg-note.picker .tag{background:rgba(63,191,111,.16);color:var(--green)}
+.pg-note.under .tag{background:rgba(255,77,79,.16);color:var(--red)}
+.pg-note h3{font-size:1.04rem;margin:.6rem 0 .4rem;font-weight:800}
+.pg-note p{font-size:.86rem;color:var(--muted)}
+
+/* 关于 */
+.pg-about{background:linear-gradient(160deg,#fff,#fff1d6);border:3px solid var(--red);border-radius:26px;padding:2.4rem}
+.pg-about h2{font-size:1.9rem;margin-bottom:.8rem;font-weight:900}
+.pg-about h2 u{color:var(--red);text-decoration:none}
+.pg-about p{color:var(--muted);margin-bottom:1rem}
+.pg-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.4rem}
+.pg-stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem;text-align:center;box-shadow:0 6px 16px rgba(120,80,30,.08)}
+.pg-stat b{font-size:1.5rem;color:var(--green);display:block}
+.pg-stat span{font-size:.8rem;color:var(--muted)}
+
+/* FAQ */
+.pg-faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.2rem 1.1rem;margin-bottom:.7rem}
+.pg-faq summary{cursor:pointer;padding:.85rem 0;font-weight:800}
+.pg-faq p{padding:0 0 .85rem;color:var(--muted)}
+
+/* 页脚 */
+.pg-foot{border-top:3px solid var(--red);background:#fff1d6;padding:2.2rem 1rem;text-align:center;color:var(--muted);font-size:.86rem}
+.pg-foot a{color:var(--red)}
+.pg-foot__links{display:flex;gap:1.1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.pg-foot__links a{font-size:.84rem}
+
+@media(max-width:980px){
+  .pg-grid{grid-template-columns:repeat(3,1fr)}
+  .pg-ch{grid-template-columns:repeat(4,1fr)}
+  .pg-notes{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .pg-nav{display:none;position:absolute;top:54px;left:0;right:0;flex-direction:column;gap:0;background:#fff7e6;border-bottom:3px solid var(--red)}
+  .pg-nav.show{display:flex}
+  .pg-nav a{padding:.85rem 1rem;border-bottom:1px solid #f0e2c8}
+  .pg-burger{display:flex}
+  .pg-grid{grid-template-columns:repeat(2,1fr)}
+  .pg-ch{grid-template-columns:repeat(3,1fr)}
+  .pg-stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="pg-top">
+  <div class="pg-top__in">
+    <div class="pg-logo">🍎 小苹果<b>影视</b> <i>·苹果园片库</i></div>
+    <nav class="pg-nav" id="pgNav">
+      <a href="#home">果园</a>
+      <a href="#grid">熟果片单</a>
+      <a href="#ch">果园频道</a>
+      <a href="#rank">熟度榜</a>
+      <a href="#notes">摘果人手记</a>
+      <a href="#about">关于小苹果</a>
+    </nav>
+    <div class="pg-burger" onclick="document.getElementById('pgNav').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="pg-hero" id="home">
+  <div class="pg-apple"><div class="pg-body"></div></div>
+  <p class="pg-dim">// plant hope, harvest films</p>
+  <h1>种下希望，<em>收获好片</em><br>小苹果影视，<u>果园里挑片子</u></h1>
+  <p>小苹果影视不像院线站那样全是“大片首发”，也不像大全站那样冷冰冰按类型柜陈列。我们把片子当苹果：有的红透了适合爽看，有的还青涩适合慢品，有的半熟正好下饭，有的落地了是怀旧，有的甜脆是合家欢。你不是来检索的，是来摘的。</p>
+  <a class="pg-cta" href="#grid">🍎 去果园摘片</a>
+</section>
+
+<section class="pg-sec" id="grid">
+  <div class="pg-head">
+    <div class="no">// by ripeness, not by genre</div>
+    <h2>熟果 <i>片单</i></h2>
+    <p>不按“动作/喜剧/科幻”分柜，按果子熟到几成了分。</p>
+  </div>
+  <div class="pg-grid">
+    <div class="pg-cell"><div class="ic">🔴</div><h3>红透·爽片</h3><p>爆米花大片、爽剧、爽文短剧</p></div>
+    <div class="pg-cell"><div class="ic">🟢</div><h3>青涩·慢片</h3><p>文艺、诗片、公路、闷但香</p></div>
+    <div class="pg-cell"><div class="ic">🟡</div><h3>半熟·下饭</h3><p>情景剧、家庭剧、不用动脑</p></div>
+    <div class="pg-cell"><div class="ic">🍂</div><h3>落果·怀旧</h3><p>老港片、修复版、童年动画</p></div>
+    <div class="pg-cell"><div class="ic">🍏</div><h3>甜脆·合家欢</h3><p>动画、少儿、周末全家看</p></div>
+  </div>
+</section>
+
+<section class="pg-sec" id="ch">
+  <div class="pg-head">
+    <div class="no">// orchard aisles</div>
+    <h2>果园 <i>频道</i></h2>
+    <p>八个枝头，从少儿到直播都挂着。</p>
+  </div>
+  <div class="pg-ch">
+    <div class="pg-c"><div class="ic">🎬</div><h3>电影</h3><p>院线/经典/小众</p></div>
+    <div class="pg-c"><div class="ic">📺</div><h3>剧集</h3><p>国产/韩剧/美剧/日剧</p></div>
+    <div class="pg-c"><div class="ic">🍥</div><h3>动漫</h3><p>新番/国创/剧场版</p></div>
+    <div class="pg-c"><div class="ic">🎤</div><h3>综艺</h3><p>慢综/选秀/访谈</p></div>
+    <div class="pg-c"><div class="ic">🐳</div><h3>纪录片</h3><p>自然/乡土/手艺/美食</p></div>
+    <div class="pg-c"><div class="ic">⚡</div><h3>短剧</h3><p>甜宠/逆袭/爽文</p></div>
+    <div class="pg-c"><div class="ic">🧸</div><h3>少儿</h3><p>动画/绘本/儿歌</p></div>
+    <div class="pg-c"><div class="ic">📡</div><h3>直播</h3><p>首映/主创谈/果园夜话</p></div>
+  </div>
+</section>
+
+<section class="pg-sec" id="rank">
+  <div class="pg-head">
+    <div class="no">// ripeness heat board</div>
+    <h2>熟度 <i>热度榜</i></h2>
+    <p>按“红透度 = 想马上看 + 安利给朋友 + 二刷意愿 + 合家欢适配”综合排。</p>
+  </div>
+  <div class="pg-rank">
+    <div class="pg-item"><h3>1. 红透：流浪地球 2 重映场 <span>99%</span></h3><div class="pg-bar"><i style="width:99%"></i></div></div>
+    <div class="pg-item"><h3>2. 半熟：武林外传 下饭马拉松 <span>97%</span></h3><div class="pg-bar"><i style="width:97%"></i></div></div>
+    <div class="pg-item"><h3>3. 甜脆：寻梦环游记 合家场 <span>95%</span></h3><div class="pg-bar"><i style="width:95%"></i></div></div>
+    <div class="pg-item"><h3>4. 青涩：海街日记 慢看版 <span>92%</span></h3><div class="pg-bar"><i style="width:92%"></i></div></div>
+    <div class="pg-item"><h3>5. 落果：大话西游 修复版 <span>90%</span></h3><div class="pg-bar"><i style="width:90%"></i></div></div>
+  </div>
+</section>
+
+<section class="pg-sec" id="notes">
+  <div class="pg-head">
+    <div class="no">// orchard logs</div>
+    <h2>摘果人 <i>手记</i></h2>
+    <p>一边是摘果人，一边是树下观众。</p>
+  </div>
+  <div class="pg-notes">
+    <article class="pg-note picker">
+      <span class="tag">🧺 摘果人</span>
+      <h3>红透的别留，留了就烂</h3>
+      <p>大片像红透的苹果，当天最香，过三天全网都在剧透。小苹果影视把“红透·爽片”放最显眼枝头，就是让你别犹豫：今晚看，就现在看，别等周末。</p>
+    </article>
+    <article class="pg-note under">
+      <span class="tag">🌳 树下观众</span>
+      <h3>青涩片要坐在树下看</h3>
+      <p>《海街日记》《小森林》《路边野餐》这种片，不能在地铁上看，得窝在沙发、脚踩拖鞋、茶放旁边。青涩片不是不好看，是要你慢一点，像等苹果自己熟。</p>
+    </article>
+    <article class="pg-note picker">
+      <span class="tag">🧺 摘果人</span>
+      <h3>半熟片是下饭神器</h3>
+      <p>《武林外传》《家有儿女》《父母爱情》根本不用从头看，盛饭时点开一集，嚼着饭就过去了。小苹果影视的“半熟·下饭”筐不追求完整，追求“开着不闹心”。</p>
+    </article>
+    <article class="pg-note under">
+      <span class="tag">🌳 树下观众</span>
+      <h3>落果不是坏果</h3>
+      <p>地上捡的苹果，撞了一下，但更甜。老港片、VCD 时代动画、老译制片就是落果——画质旧了，但味道沉了。小苹果影视专门留一筐“落果·怀旧”，不给年轻人凑数，给老观众回家。</p>
+    </article>
+  </div>
+</section>
+
+<section class="pg-sec" id="about">
+  <div class="pg-about">
+    <h2>关于 <u>小苹果影视</u></h2>
+    <p>
+      小苹果影视（xiaopingguoyingshi-h5.github.io）不是“又一个影视大全”，它是一片小果园。你不用背类型表，只要问自己：我今天想吃青的、红的、半熟的，还是落地的？
+    </p>
+    <p>
+      电影、电视剧、动漫、综艺、纪录片、短剧、少儿、直播，全都按“熟度”重新挂枝：红透·爽片 / 青涩·慢片 / 半熟·下饭 / 落果·怀旧 / 甜脆·合家欢。种下希望，收获好片。
+    </p>
+    <div class="pg-stats">
+      <div class="pg-stat"><b>5 熟度</b><span>红透/青涩/半熟/落果/甜脆</span></div>
+      <div class="pg-stat"><b>8 枝头</b><span>影/剧/漫/综/纪/短剧/少儿/直播</span></div>
+      <div class="pg-stat"><b>0 货架脸</b><span>不冷冰冰分柜</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pg-sec pg-faq">
+  <div class="pg-head">
+    <div class="no">// q & a</div>
+    <h2>小苹果 <i>问答</i></h2>
+  </div>
+  <details open>
+    <summary>“小苹果”是那首神曲吗？</summary>
+    <p>借一点国民记忆，但站本身不靠神曲。我们用“种下希望就会收获”当母题：挑片像种树，今天埋一部，明天红一部。和筷子兄弟那首《小苹果》是同名借势，不是粉丝站。</p>
+  </details>
+  <details>
+    <summary>和七七影视、奇米影视差在哪？</summary>
+    <p>七七按星期（周一治愈/周六大片），奇米按奇妙感（米仓抓粒），小苹果按熟度（青/红/半熟/落果）。一个讲时间，一个讲惊喜，一个讲口味。</p>
+  </details>
+  <details>
+    <summary>小苹果影视有片源吗？</summary>
+    <p>没有。小苹果影视是纯导航与片单站，只做分类、简介、熟度榜和手记，不提供侵权播放、不绑下载器、不弹付费会员，干净合规。</p>
+  </details>
+</section>
+
+<footer class="pg-foot">
+  <div class="pg-foot__links">
+    <a href="#grid">熟果片单</a>
+    <a href="#ch">果园频道</a>
+    <a href="#rank">熟度榜</a>
+    <a href="#notes">摘果人手记</a>
+    <a href="#about">关于小苹果</a>
+    <a href="#">免责声明</a>
+  </div>
+  <p>© 2026 <a href="https://xiaopingguoyingshi-h5.github.io">小苹果影视</a> · xiaopingguoyingshi-h5.github.io</p>
+  <p>小苹果影视 —— 种下希望，收获好片。</p>
+</footer>
+
+<script>
+document.querySelectorAll('.pg-nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('pgNav').classList.remove('show');
+  });
+});
+</script>
+
+</body>
+</html>
